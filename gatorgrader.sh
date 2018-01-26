@@ -162,7 +162,7 @@ if [ "$CHECK" = true ]; then
   printf "%s\n" "${blu}Starting to check with GatorGrader...${end}"
   # ADD ADDITIONAL CALLS TO BOTH gatorgrader.py and determine_exit_code HERE
   # --> GatorGrader CHECK: the existence of files in directories
-  python3 gatorgrader/gatorgrader.py --nowelcome --directories writing . --checkfiles reflection.md README.md
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories writing . --checkfiles README.md
   determine_exit_code $?
   # --> GatorGrader CHECK: the correct number of comments in the Java code
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labone/ \
